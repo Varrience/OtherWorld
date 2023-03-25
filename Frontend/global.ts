@@ -9,9 +9,11 @@ var client = {
     },
     currentScreen: "__index",
     ranks: {
+        banned: "⚠️",
         admin: "🔨",
         mod: "⚒️",
         dev: "🛠️",
+        owner: "👑",
     },
 };
 
