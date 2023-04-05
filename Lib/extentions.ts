@@ -18,3 +18,78 @@ window.getURLParams() = function () {
     }
     return (params);
 }
+
+// Checks if the text can be converted to emoji
+// Ex: messageFormatter(":smile:") would return "😀"
+function messageFormatter(input: String) {
+    if (input.match(/:\w+:/)) {
+        return toEmoji(input);
+    } else {
+        return input;
+    }
+}
+
+// Converts text to emoji
+// Ex: ":smile:" to "😀"
+function toEmoji(input : String) {
+    var emoji = input.replace(/:smile:/g, "😀");
+    emoji = emoji.replace(/:smiley:/g, "😃");
+    emoji = emoji.replace(/:grinning:/g, "😁");
+    emoji = emoji.replace(/:blush:/g, "😊");
+    emoji = emoji.replace(/:wink:/g, "😉");
+    emoji = emoji.replace(/:heart_eyes:/g, "😍");
+    emoji = emoji.replace(/:kissing_heart:/g, "😘");
+    emoji = emoji.replace(/:kissing_closed_eyes:/g, "😚");
+    emoji = emoji.replace(/:kissing:/g, "😗");
+    emoji = emoji.replace(/:kissing_smiling_eyes:/g, "😙");
+    emoji = emoji.replace(/:stuck_out_tongue_winking_eye:/g, "😜");
+    emoji = emoji.replace(/:stuck_out_tongue_closed_eyes:/g, "😝");
+    emoji = emoji.replace(/:stuck_out_tongue:/g, "😛");
+    emoji = emoji.replace(/:flushed:/g, "😳");
+    emoji = emoji.replace(/:grin:/g, "😁");
+    emoji = emoji.replace(/:pensive:/g, "😔");
+    emoji = emoji.replace(/:relieved:/g, "😌");
+    emoji = emoji.replace(/:unamused:/g, "😒");
+    emoji = emoji.replace(/:disappointed:/g, "😞");
+    emoji = emoji.replace(/:persevere:/g, "😣");
+    emoji = emoji.replace(/:cry:/g, "😢");
+    emoji = emoji.replace(/:joy:/g, "😂");
+    emoji = emoji.replace(/:sob:/g, "😭");
+    emoji = emoji.replace(/:sleepy:/g, "😪");
+    emoji = emoji.replace(/:disappointed_relieved:/g, "😥");
+    emoji = emoji.replace(/:cold_sweat:/g, "😰");
+    emoji = emoji.replace(/:sweat_smile:/g, "😅");
+    emoji = emoji.replace(/:sweat:/g, "😓");
+    emoji = emoji.replace(/:weary:/g, "😩");
+    emoji = emoji.replace(/:tired_face:/g, "😫");
+    emoji = emoji.replace(/:fearful:/g, "😨");
+    emoji = emoji.replace(/:scream:/g, "😱");
+    emoji = emoji.replace(/:angry:/g, "😠");
+    emoji = emoji.replace(/:rage:/g, "😡");
+    emoji = emoji.replace(/:triumph:/g, "😤");
+    emoji = emoji.replace(/:confounded:/g, "😖");
+    emoji = emoji.replace(/:laughing:/g, "😆");
+    emoji = emoji.replace(/:yum:/g, "😋");
+    emoji = emoji.replace(/:mask:/g, "😷");
+    emoji = emoji.replace(/:sunglasses:/g, "😎");
+    emoji = emoji.replace(/:sleeping:/g, "😴");
+    emoji = emoji.replace(/:dizzy_face:/g, "😵");
+    emoji = emoji.replace(/:astonished:/g, "😲");
+    emoji = emoji.replace(/:worried:/g, "😟");
+    emoji = emoji.replace(/:frowning:/g, "😦");
+    emoji = emoji.replace(/:anguished:/g, "😧");
+    emoji = emoji.replace(/:smiling_imp:/g, "😈");
+    emoji = emoji.replace(/:imp:/g, "👿");
+    emoji = emoji.replace(/:open_mouth:/g, "😮");
+    emoji = emoji.replace(/:grimacing:/g, "😬");
+    emoji = emoji.replace(/:neutral_face:/g, "😐");
+    emoji = emoji.replace(/:confused:/g, "😕");
+    emoji = emoji.replace(/:hushed:/g, "😯");
+    emoji = emoji.replace(/:no_mouth:/g, "😶");
+    emoji = emoji.replace(/:innocent:/g, "😇");
+    emoji = emoji.replace(/:smirk:/g, "😏");
+    emoji = emoji.replace(/:expressionless:/g, "😑");
+    emoji = emoji.replace(/:skull:/g, "💀");
+
+    return emoji;
+}
