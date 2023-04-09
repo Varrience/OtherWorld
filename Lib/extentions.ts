@@ -104,7 +104,7 @@ String.prototype.toEmoji = function () {
 // @Param id: the textbox where the input goes
 // @Param eid: eyedropper id which can hide or show your password
 // @Param hide: weather or not to hide the current password
-var PasswordBox = /** @class */ (function () {
+window.PasswordBox = /** @class */ (function () {
     function PasswordBox(id, eid, hide) {
         var self = this;
         this.id = id || "password";
