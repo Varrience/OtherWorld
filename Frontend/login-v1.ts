@@ -18,7 +18,7 @@ onEvent("__index.signup", "click", function () {
 });
 
 function changeScreen(newScreen) {
-  var oldScreen = client.currentScreen;
+  let oldScreen = client.currentScreen;
   setStyle(oldScreen, "transform: translateX(-320px) rotate(-20deg); opacity: 0; transition: 0.45s;");
   setTimeout(function() {
     setStyle(newScreen, "transform: translateX(320px) rotate(20deg); opacity: 0; transition: 0s;");
