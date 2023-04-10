@@ -1,7 +1,7 @@
 //===================================
 //   OtherWorld: Nameplates
 //===================================
-var nameplates = [
+const nameplates = [
     {
       name: "Black",
       price: 100,
@@ -377,7 +377,7 @@ var nameplates = [
       name: "Colack",
       price: Infinity,
       rarity: "Exclusive",
-      css: "padding:0px 5px;color:white;font-weight:bold;background:linear-gradient(45deg, black,black,black,black,black,white,black,black,black,white,black,black);border-radius: 5px;font-family: Roboto,Tahoma,sans-serif;box-shadow:1px 1px 10px -1px inset white;text-shadow:0px 2px 5px white;",
+      css: "border-radius: 5px; padding: 0px 5px; background: #333333; text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px; color: #FFFFFF;",
       collection: "Developer Nameplates"
     },
     {
@@ -416,10 +416,10 @@ var nameplates = [
       collection: "Epic Elements"
     },
     {
-      name: "Comet",
+      name: "Steel",
       price: 500,
       rarity: "Legendary",
-      css: "border-radius: 5px; padding: 0px 5px; background: #333333; text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px; color: #FFFFFF;",
+      css: "padding:0px 5px;color:white;font-weight:bold;background:linear-gradient(45deg, black,black,black,black,black,white,black,black,black,white,black,black);border-radius: 5px;font-family: Roboto,Tahoma,sans-serif;box-shadow:1px 1px 10px -1px inset white;text-shadow:0px 2px 5px white;",
       collection: "C"
     }, 
     {
