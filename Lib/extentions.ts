@@ -69,10 +69,10 @@ String.prototype.censor = function (placeholder) {
 // const params = getURLParams(); 
 // console.log(params.screen) for example would produce a value if it was included
 window.getURLParams() = function () {
-    const url = getAttribute('divApplab', 'baseURI');
-    const query = url.match(/(?<=\?|&)[^&]*/g).join("=").split("=");
-    let params = {};
-    for (let i = 0; i < query.length; i += 2) {
+    var url = getAttribute('divApplab', 'baseURI');
+    var query = url.match(/(?<=\?|&)[^&]*/g).join("=").split("=");
+    var params = {};
+    for (var i = 0; i < query.length; i += 2) {
         params[query[i]] = query[i + 1] || undefined;
     }
     return (params);
