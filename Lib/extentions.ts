@@ -68,7 +68,7 @@ String.prototype.censor = function (placeholder) {
 // Gets the query from the url bar and parses parameters as object
 // const params = getURLParams(); 
 // console.log(params.screen) for example would produce a value if it was included
-window.getURLParams() = function () {
+window.getURLParams = function () {
     var url = getAttribute('divApplab', 'baseURI');
     var query = url.match(/(?<=\?|&)[^&]*/g).join("=").split("=");
     var params = {};
