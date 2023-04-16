@@ -1,8 +1,8 @@
-# [App Name]
-Welcome to [App Name], a chat/social media app inspired by the former [WUT] World project! This app is designed with advanced security protocols to ensure the privacy and safety of its users.
+# OtherWorld
+Welcome to OtherWorld, a chat/social media app inspired by the former [WUT] World project! This app is designed with advanced security protocols to ensure the privacy and safety of its users.
 
 ## To-Do List
-Here are the key components that we are working on to make [App Name] a great app:
+Here are the key components that we are working on to make OtherWorld a great app:
 
 - #### User Backend
   The user backend will manage all user data, including registration, authentication, and account settings.
@@ -11,7 +11,7 @@ Here are the key components that we are working on to make [App Name] a great ap
 - #### Security Library
   The security library will handle all aspects of data security, including encryption, token management, and other security protocols to ensure user data is secure.
 - #### Graphics
-  We are working on designing and implementing the graphics for [App Name] to provide a visually appealing and user-friendly experience.
+  We are working on designing and implementing the graphics for OtherWorld to provide a visually appealing and user-friendly experience.
 - #### Bot System
   A bot system will allow automated interactions between users, providing additional features and functionality to the app.
 - #### Roles
@@ -23,7 +23,7 @@ Here are the key components that we are working on to make [App Name] a great ap
 - #### Chatrooms
   Chatrooms will allow users to join and participate in various conversations with other users, promoting social interaction and community building within the app.
 - #### Hosting
-  [App Name] is hosted on Code.org, ensuring a reliable and secure platform for our users.
+  OtherWorld is hosted on Code.org, ensuring a reliable and secure platform for our users.
   
 ## Conclusion
-We are committed to providing a safe and enjoyable experience for our users. Stay tuned for more updates and developments on [App Name]!
+We are committed to providing a safe and enjoyable experience for our users. Stay tuned for more updates and developments on OtherWorld!
