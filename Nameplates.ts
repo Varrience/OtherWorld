@@ -353,7 +353,7 @@ const nameplates = [
       collection: "Exclusive"
     },
     {
-      name: "Mod",
+      name: "Moderator",
       price: Infinity,
       rarity: "Exclusive",
       css: "padding:0px 5px;color:white;font-weight:bold;background:linear-gradient(to bottom, limegreen,green);border-radius: 5px;font-family: Roboto,Tahoma,sans-serif;box-shadow:1px 1px 10px -1px inset white;text-shadow:0px 2px 5px white;",
@@ -364,6 +364,13 @@ const nameplates = [
       price: Infinity,
       rarity: "Exclusive",
       css: "padding:0px 5px;color:white;font-weight:bold;background:linear-gradient(to bottom, dodgerblue,blue);border-radius: 5px;font-family: Roboto,Tahoma,sans-serif;box-shadow:1px 1px 10px -1px inset white;text-shadow:0px 2px 5px white;",
+      collection: "Exclusive"
+    },
+    {
+      name: "Dev",
+      price: Infinity,
+      rarity: "Exclusive",
+      css: "padding:0px 5px;color:white;font-weight:bold;background:linear-gradient(to bottom, magenta, purple);border-radius: 5px;font-family: Roboto,Tahoma,sans-serif;box-shadow:1px 1px 10px -1px inset white;text-shadow:0px 2px 5px white;",
       collection: "Exclusive"
     },
     {
@@ -541,11 +548,25 @@ const nameplates = [
       css: "color: #d47f1c; text-shadow: 0 1px 0px #23d419, 0 0px 2px #660000, 0 1px 1px #594f36, 0 1px 2px #d47f1c, 0 1px 3px #23d419;",
       collection: "Food",
     },
- ];
+    {
+      name: "Confetti",
+      price: 500,
+      rarity: "Rare",
+      css: "color: #81d4f0; text-shadow: 0 2px 0px #f08181, 0 0px 2px #e8e227, 0 2px 2px #2df20f, 0 2px 3px #0832c9;",
+      collection: "C",
+    },
+    {
+      name: "CubeDood",
+      price: 1500,
+      rarity: "Rare",
+      css: "padding: 0px 10px;text-align:center;color: black;background: linear-gradient(to bottom, white, grey);border-radius: 2px;font-family: monospace;",
+      collection: "Video Games",
+    },
+  ];
 
 //Function for displaying CSS nameplates.
 function convertNameplate(plate){
-  let a = "";
+  var a = "";
   for (var i = 0; i < nameplates.length; i++){
     if (plate == nameplates[i].name){
       a = nameplates[i].css;
