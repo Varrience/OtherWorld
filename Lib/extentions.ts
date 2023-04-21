@@ -107,46 +107,65 @@ String.prototype.toEmoji = function () {
 // @Param id: the textbox where the input goes
 // @Param eid: eyedropper id which can hide or show your password
 // @Param hide: weather or not to hide the current password
-window.PasswordBox = /** @class */ (function () {
-    function PasswordBox(id, eid, hide) {
+window.Form = /** @class */ (function () {
+    function Form(uid, pid, eid, hide) {
         var self = this;
-        this.id = id || "password";
-        this.eid = eid || "eyedropper";
-        this.text = "";
+        this.uid = uid || "";
+        this.pid = pid || "";
+        this.eid = eid || "";
+        this.passwordField = "";
+        this.usernameField = "";
         this.hide = hide !== undefined ? hide : true;
-        onEvent(this.id, "input", function (event) {
-            var updateLength = getText(id).length - self.text.length;
-            if (updateLength > 0) {
-                self.text = self.text.substring(0, event.selectionStart - 1) +
-                    getText(self.id).substring(event.selectionStart - updateLength, event.selectionEnd) +
-                    self.text.substring(event.selectionEnd - 1, self.text.length);
-                setText(id, self.passwordManage());
-            }
-            else if (updateLength < 0) {
-                self.text = self.text.substring(0, self.text.length + updateLength);
-            }
-        });
+        if (uid !== "") {
+            onEvent(this.uid, "input", function () {
+                self.usernameField = getText(uid);
+            });
+        }
+        if (pid !== "") {
+            onEvent(this.pid, "input", function (event) {
+                var updateLength = getText(pid).length - self.passwordField.length;
+                if (updateLength > 0) {
+                    self.passwordField = self.passwordField.substring(0, event.selectionStart - 1) +
+                        getText(self.pid).substring(event.selectionStart - updateLength, event.selectionEnd) +
+                        self.passwordField.substring(event.selectionEnd - 1, self.passwordField.length);
+                    setText(pid, self.passwordManage());
+                }
+                else if (updateLength < 0) {
+                    self.passwordField = self.passwordField.substring(0, self.passwordField.length + updateLength);
+                }
+            });
+        }
         if (eid !== "") {
             onEvent(this.eid, "click", function () {
                 self.eyedropper();
             });
         }
     }
-    PasswordBox.prototype.passwordManage = function (hide) {
+    Form.prototype.passwordManage = function (hide) {
         hide = hide !== undefined ? hide : this.hide;
         if (!hide) {
-            return this.text;
+            return this.passwordField;
         }
         else {
             var str = "";
-            for (var i = 0; i < this.text.length; i++) {
+            for (var i = 0; i < this.passwordField.length; i++) {
                 str += "\u2022";
-            };
+            }
+            ;
             return str;
         }
     };
-    PasswordBox.prototype.eyedropper = function () {
+    Form.prototype.update = function () {
+        var fields = [this.usernameField, this.passwordField];
+        var form = new Form(this.uid, this.pid, this.eid, this.hide);
+        form.usernameField = fields[0];
+        form.passwordField = fields[1];
+        setText(this.uid, this.usernameField);
+        setText(this.pid, this.passwordManage());
+        return form;
+    };
+    Form.prototype.eyedropper = function () {
         setText(this.id, this.passwordManage((this.hide = !this.hide)));
     };
-    return PasswordBox;
+    return Form;
 }());
