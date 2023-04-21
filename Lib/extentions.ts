@@ -167,5 +167,9 @@ window.Form = /** @class */ (function () {
     Form.prototype.eyedropper = function () {
         setText(this.id, this.passwordManage((this.hide = !this.hide)));
     };
+    Form.prototype.submit = function () {
+        // TODO: Apply encrption here so it's encrpted
+        return { username: this.usernameField, password: this.passwordField };
+    };
     return Form;
 }());
