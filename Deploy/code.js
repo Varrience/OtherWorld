@@ -26,5 +26,5 @@ onEvent("aboutbtn", "click", function () {
 });
 onEvent("legalbtn", "click", function () {
     // usernameHolder = getText("username") || usernameHolder;
-    innerHTML("contentLogin", "\n    <div class=\"textArea\" style=\"background-color: black; color: white; font-size: 4vh; overflow-y: scroll; scrollbar-width: thin; height: 37vh\">\n     This section will contain any legal things we may need, including perhaps our TOS about users using this application\n     and perhaps crediting the original creators contributing to this development thus far\n     <br>Creators:<br>\n     &nbsp;@Colack<br>\n     &nbsp;@LGM Prod<br>\n     &nbsp;@Letti<br>\n     &nbsp;@[WUT] Adam<br>\n     &nbsp;@Varrience\n    </div>\n    ");
+    innerHTML("contentLogin", "\n    <div class=\"textArea\" style=\"background-color: black; color: white; font-size: 4vh; overflow-y: scroll; scrollbar-width: thin; height: 37vh\">\n     This section will contain any legal things we may need, including perhaps our TOS about users using this application\n     and perhaps crediting the original creators contributing to this development thus far\n     <br>Creators:<br>\n     &nbsp;@Colack<br>\n     &nbsp;@LGM Productions<br>\n     &nbsp;@Letti<br>\n     &nbsp;@[WUT] Adam<br>\n     &nbsp;@Varrience\n    </div>\n    ");
 });
