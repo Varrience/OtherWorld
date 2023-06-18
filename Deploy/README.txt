@@ -1,3 +1,6 @@
+# WARNING ALL CODE IN THIS DIRECTORY MAY BE REMOVED SOON
+## Remaining frontend html will be migrated soon to salvage what was built
+
 # README for Full App #
 
 This is the README file for the Full App app. It's a great place to write
