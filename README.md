@@ -23,7 +23,7 @@ Here are the key components that we are working on to make OtherWorld a great ap
 - #### Chatrooms
   Chatrooms will allow users to join and participate in various conversations with other users, promoting social interaction and community building within the app.
 - #### Hosting
-  OtherWorld is hosted on Code.org, ensuring a reliable and secure platform for our users.
+  OtherWorld is hosted on Code.org (possibly not), ensuring a reliable and secure platform for our users.
   
 ## Conclusion
 We are committed to providing a safe and enjoyable experience for our users. Stay tuned for more updates and developments on OtherWorld!
